@@ -12,6 +12,8 @@
 
 -(void)ProcessPaymentAmount: (NSInteger) paymentAmount {
     
+    [self.delegate ProcessPaymentAmount:paymentAmount];
+    
 }
 
 @end
