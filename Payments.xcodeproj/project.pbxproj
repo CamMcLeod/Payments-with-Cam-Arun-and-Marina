@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		62C5C75A22A1AB060085A19F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C75922A1AB060085A19F /* main.m */; };
+		62C5C76222A1AC410085A19F /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C76022A1AC410085A19F /* InputHandler.m */; };
+		62C5C76522A1B09A0085A19F /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C76422A1B09A0085A19F /* PaymentGateway.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		62C5C75622A1AB060085A19F /* Payments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Payments; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C5C75922A1AB060085A19F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62C5C76022A1AC410085A19F /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		62C5C76122A1AC410085A19F /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		62C5C76322A1B09A0085A19F /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		62C5C76422A1B09A0085A19F /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				62C5C75922A1AB060085A19F /* main.m */,
+				62C5C76322A1B09A0085A19F /* PaymentGateway.h */,
+				62C5C76422A1B09A0085A19F /* PaymentGateway.m */,
+				62C5C76122A1AC410085A19F /* InputHandler.h */,
+				62C5C76022A1AC410085A19F /* InputHandler.m */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C5C76522A1B09A0085A19F /* PaymentGateway.m in Sources */,
 				62C5C75A22A1AB060085A19F /* main.m in Sources */,
+				62C5C76222A1AC410085A19F /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

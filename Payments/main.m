@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputHandler.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // generate random number
+        int randomPayment = 100 + arc4random_uniform(900);
+        
+        // begin payment
+        NSLog(@"Thank you for shopping at Acme.com Your total today is $%d Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon", randomPayment);
+        
+        // read in response
+        int paymentMethod = [InputHandler handleInt];
+        NSLog(@"You chose: %d", paymentMethod);
+        
     }
     return 0;
 }
