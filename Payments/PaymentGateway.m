@@ -10,7 +10,7 @@
 
 @implementation PaymentGateway
 
--(void)ProcessPaymentAmount: (NSInteger *) paymentAmount {
+-(void)ProcessPaymentAmount: (NSInteger) paymentAmount {
     
 }
 

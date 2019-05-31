@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
+#import "PaymentGateway.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -19,7 +20,13 @@ int main(int argc, const char * argv[]) {
         
         // read in response
         int paymentMethod = [InputHandler handleInt];
+        
         NSLog(@"You chose: %d", paymentMethod);
+        
+        PaymentGateway *paymentGateway = [[PaymentGateway alloc] init];
+        
+        [paymentGateway ProcessPaymentAmount: randomPayment];
+        
         
     }
     return 0;

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PaymentGateway : NSObject
 
--(void)ProcessPaymentAmount: (NSInteger *) paymentAmount;
+-(void)ProcessPaymentAmount: (NSInteger) paymentAmount;
 
 @end
 
