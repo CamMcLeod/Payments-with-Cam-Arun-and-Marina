@@ -12,6 +12,7 @@
 #import "PaypalPaymentService.h"
 #import "StripePaymentService.h"
 #import "AmazonPaymentService.h"
+#import "ApplePaymentService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -22,7 +23,7 @@ int main(int argc, const char * argv[]) {
             int randomPayment = 100 + arc4random_uniform(900);
             
             // begin payment
-            NSLog(@"Thank you for shopping at Acme.com Your total today is $%d Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon", randomPayment);
+            NSLog(@"Thank you for shopping at Acme.com Your total today is $%d Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon 4: ApplePay", randomPayment);
             
             // read in response
             int paymentMethod = [InputHandler handleInt];
@@ -33,6 +34,7 @@ int main(int argc, const char * argv[]) {
             PaypalPaymentService *paypal = [[PaypalPaymentService alloc] init];
             StripePaymentService *stripe = [[StripePaymentService alloc] init];
             AmazonPaymentService *amazon = [[AmazonPaymentService alloc] init];
+            ApplePaymentService *apple = [[ApplePaymentService alloc] init];
             
             switch (paymentMethod) {
                 case 1:
@@ -45,6 +47,10 @@ int main(int argc, const char * argv[]) {
                     
                 case 3:
                     paymentGateway.delegate = amazon;
+                    break;
+                    
+                case 4:
+                    paymentGateway.delegate = apple;
                     break;
                 
                 case 0:

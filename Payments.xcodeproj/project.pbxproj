@@ -13,6 +13,7 @@
 		62C5C76822A1B7CC0085A19F /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C76722A1B7CC0085A19F /* PaypalPaymentService.m */; };
 		62C5C76B22A1B7DB0085A19F /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C76A22A1B7DB0085A19F /* StripePaymentService.m */; };
 		62C5C76E22A1B7EC0085A19F /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5C76D22A1B7EC0085A19F /* AmazonPaymentService.m */; };
+		9C5D6D7222A1BCAE0005A7B9 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D6D7122A1BCAE0005A7B9 /* ApplePaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		62C5C76A22A1B7DB0085A19F /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
 		62C5C76C22A1B7EC0085A19F /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		62C5C76D22A1B7EC0085A19F /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		9C5D6D7022A1BCAE0005A7B9 /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		9C5D6D7122A1BCAE0005A7B9 /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				62C5C76A22A1B7DB0085A19F /* StripePaymentService.m */,
 				62C5C76C22A1B7EC0085A19F /* AmazonPaymentService.h */,
 				62C5C76D22A1B7EC0085A19F /* AmazonPaymentService.m */,
+				9C5D6D7022A1BCAE0005A7B9 /* ApplePaymentService.h */,
+				9C5D6D7122A1BCAE0005A7B9 /* ApplePaymentService.m */,
 				62C5C76122A1AC410085A19F /* InputHandler.h */,
 				62C5C76022A1AC410085A19F /* InputHandler.m */,
 			);
@@ -146,6 +151,7 @@
 				62C5C76E22A1B7EC0085A19F /* AmazonPaymentService.m in Sources */,
 				62C5C76B22A1B7DB0085A19F /* StripePaymentService.m in Sources */,
 				62C5C76522A1B09A0085A19F /* PaymentGateway.m in Sources */,
+				9C5D6D7222A1BCAE0005A7B9 /* ApplePaymentService.m in Sources */,
 				62C5C75A22A1AB060085A19F /* main.m in Sources */,
 				62C5C76222A1AC410085A19F /* InputHandler.m in Sources */,
 				62C5C76822A1B7CC0085A19F /* PaypalPaymentService.m in Sources */,
@@ -270,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -279,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

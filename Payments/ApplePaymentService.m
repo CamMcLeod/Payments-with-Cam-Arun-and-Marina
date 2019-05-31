@@ -1,18 +1,18 @@
 //
-//  PaypalPaymentService.m
+//  ApplePaymentService.m
 //  Payments
 //
-//  Created by Cameron Mcleod on 2019-05-31.
+//  Created by Marina Mona June McPeak on 2019-05-31.
 //  Copyright © 2019 Cameron Mcleod. All rights reserved.
 //
 
-#import "PaypalPaymentService.h"
+#import "ApplePaymentService.h"
 
-@implementation PaypalPaymentService
+@implementation ApplePaymentService
 
 - (void)ProcessPaymentAmount:(NSInteger)paymentAmount {
     
-    NSLog(@"Paypal processed amount: %lu", paymentAmount);
+    NSLog(@"ApplePay processed amount: %lu", paymentAmount);
     
 }
 
@@ -21,6 +21,5 @@
     return arc4random_uniform(2);
     
 }
-
 
 @end

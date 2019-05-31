@@ -16,4 +16,10 @@
     
 }
 
+- (BOOL)canProcessPayment { 
+
+    return arc4random_uniform(2);
+    
+}
+
 @end
