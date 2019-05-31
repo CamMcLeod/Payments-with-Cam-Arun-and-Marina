@@ -26,18 +26,8 @@
 }
 
 +(int)handleInt {
-    
-    int handledInt;
-    
-    // check if string can be an integer else return 0
-    NSString *stringInt = [self handleString];
-    if ([stringInt intValue]) {
-        handledInt =[stringInt intValue];
-    } else {
-        handledInt = 0;
-    }
-    
-    return handledInt;
+
+    return [[self handleString] intValue];
 }
 
 @end
